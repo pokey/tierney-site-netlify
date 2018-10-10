@@ -1,27 +1,87 @@
 <head>
 
-	<title>{{ .Title }} | Kaldi</title>
+	<title>{{ .Title }}</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
 	<link rel="stylesheet" href="/css/main.css" />
 
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700" rel="stylesheet">
-
-	<!-- Favicons -->
-	<link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
-	<link rel="icon" type="image/png" href="/img/favicon-32x32.png" sizes="32x32">
-	<link rel="icon" type="image/png" href="/img/favicon-16x16.png" sizes="16x16">
-	<link rel="manifest" href="/manifest.json">
-	<link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#ff4400">
-	<meta name="theme-color" content="#fff">
-
-	<!-- Open Graph -->
-	<meta property="og:type" content="business.business">
-	<meta property="og:title" content="Kaldi | Great coffee with a conscience">
-	<meta property="og:url" content="/">
-	<meta property="og:image" content="/img/og-image.jpg">
-
 	<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+    <!-- <meta name="description" content="empires fall  |  the dance goes on"> -->
+
+    <!-- Disable tap highlight on IE -->
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Matthew Tierney">
+    <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Web Starter Kit">
+    <link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#2F3BA2">
+
+    <!-- SOCIAL CARDS -->
+
+    <!-- FACEBOOK -->
+    <meta property="fb:app_id" content="1738401102869185"/>
+    <meta property="og:url" content="https://matttierney.com">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Matthew Tierney">
+    <!-- <meta property="og:description" content="Oct 19_29 • 195 Chrystie St. NYC • Bryant Toth Fine Art"> -->
+    <meta property="og:updated_time" content="2018-10-09T18:27:00">
+    <meta property="og:video:url" content="https://player.vimeo.com/video/{{ .Params.vimeo.id }}?autoplay=1">
+    <meta property="og:video:secure_url" content="https://player.vimeo.com/video/{{ .Params.vimeo.id }}?autoplay=1">
+    <meta property="og:video:type" content="text/html">
+    <meta property="og:video:width" content="{{ .Params.vimeo.width }}">
+    <meta property="og:video:height" content="{{ .Params.vimeo.height }}">
+    <meta property="og:video:url" content="https://vimeo.com/moogaloop.swf?clip_id={{ .Params.vimeo.id }}&amp;autoplay=1">
+    <meta property="og:video:secure_url" content="https://vimeo.com/moogaloop.swf?clip_id={{ .Params.vimeo.id }}&amp;autoplay=1">
+    <meta property="og:video:type" content="application/x-shockwave-flash">
+    <meta property="og:video:width" content="{{ .Params.vimeo.width }}">
+    <meta property="og:video:height" content="{{ .Params.vimeo.height }}">
+    <meta property="og:image" content="https://matttierney.com/images/social.png" >
+
+    <!-- TWITTER -->
+    <meta name="twitter:card" content="player">
+    <meta name="twitter:site" content="@modernmurder">
+    <meta name="twitter:creator" content="@modernmurder">
+    <meta name="twitter:title" content="Matthew Tierney">
+    <!-- <meta name="twitter:description" content="Oct 19_29 • 195 Chrystie St. NYC • Bryant Toth Fine Art"> -->
+    <meta name="twitter:image" content="https://matttierney.com/images/social.png">
+    <meta name="twitter:player" content="https://player.vimeo.com/video/{{ .Params.vimeo.id }}">
+    <meta name="twitter:player:width" content="{{ .Params.vimeo.width }}">
+    <meta name="twitter:player:height" content="{{ .Params.vimeo.height }}">
+    <meta name="twitter:site" content="@modernmurder">
+
+    <!-- JSON-LD -->
+    <script type="application/ld+json">
+       {
+          "@context": "http://schema.org",
+          "@type": "Person",
+          "name": "Matthew Tierney",
+          "jobTitle": "Artist",
+          "image": [
+             "https://matttierney.com/images/social.png"
+          ],
+          "url": "https://matttierney.com",
+          "sameAs": [
+             "https://twitter.com/modernmurder"
+          ]
+       }
+    </script> 
+
+    <!-- Color the status bar on mobile devices -->
+    <meta name="theme-color" content="#2e273c">
+
 </head>

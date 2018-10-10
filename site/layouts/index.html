@@ -1,13 +1,26 @@
 {{ define "main" }}
 
-{{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Title "subtitle" .Params.subtitle) }}
-
-{{ partial "short-text" .Params.blurb}}
-
-{{ partial "2-up" .Params }}
-
-{{ partial "text-and-image" (dict "heading" .Params.values.heading "text" .Params.values.text "buttonText" "Read more" "buttonLink" "/values") }}
-
-{{ partial "blog" . }}
-
+<article class="pb5">
+    <div class="tc ph2 ph4-ns pt3 pt4-ns">
+        <h1 class="f3 f1-m f-subheadline-l measure lh-title fw1 mt0 mb3 mb4-ns">{{ .Title }}</h1>
+        <div class="w-100 dib measure f3">
+            <div class="video">
+                <iframe src="https://player.vimeo.com/video/{{ .Params.vimeo.id }}"
+                        frameborder="0"
+                        webkitallowfullscreen mozallowfullscreen allowfullscreen>
+                </iframe>
+            </div>
+            <span class="mt3 mt5-l db fr-ns f5 f4-l ttc tracked">
+                <a
+                    class="link dim light-blue"
+                    href="http://www.bryanttothfineart.com/artists/#/matthiew-tierney/">
+                    contact
+                </a>
+            </span>
+            <span class="mt3 mt5-l db fl-ns f6 f5-l silver">
+                <small>Copyright &copy; Matthew Tierney <time datetime="2018">2018</time></small>
+            </span>
+        </div>
+    </div>
+</article>
 {{ end }}

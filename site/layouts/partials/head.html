@@ -68,18 +68,31 @@
     <script type="application/ld+json">
        {
           "@context": "http://schema.org",
-          "@type": "Person",
+          "@type": "Event",
           "name": "Matthew Tierney",
-          "jobTitle": "Artist",
+          "startDate": "10/10/2018 10:00PM",
+          "location": {
+             "@type": "Place",
+             "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "195 Chrystie St",
+                "addressLocality": "New York",
+                "postalCode": "10002",
+                "addressRegion": "NY",
+                "addressCountry": "US"
+             }
+             "name": "R/SF projects"
+          },
           "image": [
              "https://matttierney.com/img/social.png"
           ],
-          "url": "https://matttierney.com",
-          "sameAs": [
-             "https://twitter.com/modernmurder"
-          ]
+          "endDate": "10/10/2018 07:00PM",
+          "performer": {
+             "@type": "Person",
+             "name": "Matthew Tierney"
+          }
        }
-    </script> 
+    </script>
 
     <!-- Color the status bar on mobile devices -->
     <meta name="theme-color" content="#2e273c">

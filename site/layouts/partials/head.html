@@ -18,17 +18,17 @@
 
     <!-- Add to homescreen for Chrome on Android -->
     <meta name="mobile-web-app-capable" content="yes">
-    <meta name="application-name" content="Matthew Tierney">
-    <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
+    <meta name="application-name" content="{{ .Title }}">
+    <link rel="icon" sizes="192x192" href="img/touch/chrome-touch-icon-192x192.png">
 
     <!-- Add to homescreen for Safari on iOS -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="apple-mobile-web-app-title" content="Web Starter Kit">
-    <link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
+    <link rel="apple-touch-icon" href="img/touch/apple-touch-icon.png">
 
     <!-- Tile icon for Win8 (144x144 + tile color) -->
-    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileImage" content="img/touch/ms-touch-icon-144x144-precomposed.png">
     <meta name="msapplication-TileColor" content="#2F3BA2">
 
     <!-- SOCIAL CARDS -->
@@ -37,7 +37,7 @@
     <meta property="fb:app_id" content="1738401102869185"/>
     <meta property="og:url" content="https://matttierney.com">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Matthew Tierney">
+    <meta property="og:title" content="{{ .Title }}">
     <!-- <meta property="og:description" content="Oct 19_29 • 195 Chrystie St. NYC • Bryant Toth Fine Art"> -->
     <meta property="og:updated_time" content="2018-10-09T18:27:00">
     <meta property="og:video:url" content="https://player.vimeo.com/video/{{ .Params.vimeo.id }}?autoplay=1">
@@ -50,15 +50,15 @@
     <meta property="og:video:type" content="application/x-shockwave-flash">
     <meta property="og:video:width" content="{{ .Params.vimeo.width }}">
     <meta property="og:video:height" content="{{ .Params.vimeo.height }}">
-    <meta property="og:image" content="https://matttierney.com/images/social.png" >
+    <meta property="og:image" content="https://matttierney.com/img/social.png" >
 
     <!-- TWITTER -->
     <meta name="twitter:card" content="player">
     <meta name="twitter:site" content="@modernmurder">
     <meta name="twitter:creator" content="@modernmurder">
-    <meta name="twitter:title" content="Matthew Tierney">
+    <meta name="twitter:title" content="{{ .Title }}">
     <!-- <meta name="twitter:description" content="Oct 19_29 • 195 Chrystie St. NYC • Bryant Toth Fine Art"> -->
-    <meta name="twitter:image" content="https://matttierney.com/images/social.png">
+    <meta name="twitter:image" content="https://matttierney.com/img/social.png">
     <meta name="twitter:player" content="https://player.vimeo.com/video/{{ .Params.vimeo.id }}">
     <meta name="twitter:player:width" content="{{ .Params.vimeo.width }}">
     <meta name="twitter:player:height" content="{{ .Params.vimeo.height }}">
@@ -72,7 +72,7 @@
           "name": "Matthew Tierney",
           "jobTitle": "Artist",
           "image": [
-             "https://matttierney.com/images/social.png"
+             "https://matttierney.com/img/social.png"
           ],
           "url": "https://matttierney.com",
           "sameAs": [
